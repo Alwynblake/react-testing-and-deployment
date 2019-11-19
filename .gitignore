@@ -1,3 +1,6 @@
+.idea
+aws.yml
+build
 # Logs
 logs
 *.log
