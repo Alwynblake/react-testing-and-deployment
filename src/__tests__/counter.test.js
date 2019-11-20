@@ -26,7 +26,13 @@ describe('Testing our Counter component', () => {
       expect(app.state('count')).toBe(-1);
     });
 
-    it('render correctly', () => {
+  it('should ', function () {
+    let app = mount(<Counter/>);
+    let page = app.find('.count');
+    expect(page).toBeDefined();
+  });
+
+  it('render correctly', () => {
       const renderTree = renderer.create(<Counter />).toJSON();
       expect(renderTree).toMatchSnapshot();
     })
