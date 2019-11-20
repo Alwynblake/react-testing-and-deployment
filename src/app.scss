@@ -1,0 +1,13 @@
+
+body {
+  margin: 0;
+  background: rgb(55, 88, 188);
+  text-align: center;
+
+  @mixin center-column {
+    width: 900px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
